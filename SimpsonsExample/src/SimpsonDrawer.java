@@ -8,22 +8,10 @@ import static jdk.nashorn.internal.objects.Global.println;
  */
 public class SimpsonDrawer {
 
-    public void draw (Object[] simpsons){
+    public void draw (Cartoon[] simpsons){
 
-        for (Object simpson : simpsons) {
-            if (simpson instanceof Homer){
-                System.out.println("Homer Simpson");
-            } else  if (simpson instanceof Marge) {
-                System.out.println("Marge Simpson");
-            } else  if (simpson instanceof Bart) {
-                System.out.println("Bart Simpson");
-            } else  if (simpson instanceof Lisa) {
-                System.out.println("Lisa Simpson");
-            } else  if (simpson instanceof Maggie) {
-                System.out.println("Maggie Simpson");
-            } else {
-                System.out.print("... the hell I draw that?");
-            }
+        for (Cartoon simpson : simpsons) {
+            simpson.draw();
         }
     }
 }

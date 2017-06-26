@@ -16,7 +16,7 @@ public class Principal {
         homero.drunkBeers = 2;
         homero.eatenDonuts = 2;
 
-        Object[] arreglo = new Object[5];
+        Cartoon[] arreglo = new Cartoon[5];
         arreglo[0] = homero;
         arreglo[1] = marge;
         arreglo[2] = bart;
